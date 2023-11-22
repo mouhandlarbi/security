@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:security/header_black.dart';
+import 'package:security/card_item.dart';
 import 'package:security/hovered_btn.dart';
+import 'package:security/round_btn.dart';
+import 'package:security/welcome_message.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -32,7 +34,41 @@ class _HomePageState extends State<HomePage> {
       ),
       body: ListView(
         children: [
-          HeaderBlack(),
+          Container(
+            color: Colors.white,
+            child: const WelcomeMessage(
+              isAnimated: false,
+              bkGround: BackGround.white,
+              mainText: "Strong partner for accelerating your innovation with",
+              coloredText: "Software services",
+            ),
+          ),
+          Container(
+            color: Colors.pink,
+            child: const WelcomeMessage(
+              isAnimated: false,
+              bkGround: BackGround.pink,
+              mainText: "Strong partner for accelerating your innovation with",
+              coloredText: "Software services",
+            ),
+          ),
+          Container(
+            color: Colors.black,
+            child: const WelcomeMessage(
+              isAnimated: false,
+              bkGround: BackGround.dark,
+              mainText: "Strong partner for accelerating your innovation with",
+              coloredText: "Software services",
+            ),
+          ),
+          const CardItem(
+            isHovered: true,
+            title: "startup Develepement",
+            subtitle: "Sparking your next big thing",
+            description:
+                "We offer full-cycle develepement for startups We offer full-cycle develepement for startups We offer full-cycle develepement for startups",
+          ),
+          //RoundedBtn(),
         ],
       ),
     );
