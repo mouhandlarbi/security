@@ -8,8 +8,7 @@ class RoundedBtn extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Container(
-        width: 200,
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: 16,
           vertical: 12,
         ),
