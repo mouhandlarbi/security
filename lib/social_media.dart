@@ -65,23 +65,3 @@ class SocialMediaIconsRow extends StatelessWidget {
     );
   }
 }
-
-class MyFooter extends StatelessWidget {
-  const MyFooter({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: const Color.fromARGB(255, 153, 27, 27),
-      padding: const EdgeInsets.all(20),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SocialMediaIconsRow(
-            socialMediaIcons: socialMediaIcons,
-          ),
-        ],
-      ),
-    );
-  }
-}

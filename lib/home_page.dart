@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:security/card_item.dart';
+import 'package:security/footer.dart';
 import 'package:security/footer_list_tile.dart';
 import 'package:security/hovered_btn.dart';
 import 'package:security/image_card.dart';
 import 'package:security/service_card.dart';
 import 'package:security/small_btn.dart';
-import 'package:security/social_media.dart';
 import 'package:security/welcome_message.dart';
 
 class HomePage extends StatefulWidget {
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-          MyFooter()
+          const MyFooter()
         ],
       ),
     );
